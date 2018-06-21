@@ -1,6 +1,7 @@
 package file.create.ejemplo.com.navigation;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -25,7 +26,7 @@ import java.io.BufferedReader;
 
 public class Activity2 extends AppCompatActivity {
 
-    Button createq;
+    Button createq, BConfig;
 
     TextView textTXT;
 
@@ -38,10 +39,21 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
 
 
+        BConfig = findViewById(R.id.BConfig);
+        BConfig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMainActivity();
+            }
+        });
+
+
         createq = (Button) findViewById(R.id.createq);// asigno a la variable create (de tipo botton) al elemento Button del layout
 
         textTXT = (TextView) findViewById(R.id.textoTXT);// /Contenido del  archivo/ tenga presente que lo que está después del  R.id es el id del elemento del layout
         // textRuta = (TextView) findViewById(R.id.textoRUTA);// muestra la ruta de almacenamiento del archivo
+
+
 
 
         createq.setOnClickListener(new View.OnClickListener() {// METODO PARA CREAR EL ARCHIVO EN UNA CARPETA
@@ -80,6 +92,12 @@ public class Activity2 extends AppCompatActivity {
             }
         });
 
+    }
+
+
+    public void openMainActivity(){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 
 

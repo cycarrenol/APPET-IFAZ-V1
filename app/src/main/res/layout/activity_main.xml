@@ -4,21 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#2E2E2E">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Activity 1" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="208dp"
+        android:text="separacion"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/TnumEletrodos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"
+        android:text="Numero de electrodos"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="81dp"
+        android:text="Visualizacion" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@android:color/background_light"
+        android:hapticFeedbackEnabled="false"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/saveConf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="190dp"
-        android:text="open activity 2" />
+        android:layout_marginBottom="29dp"
+        android:text="Enviar" />
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="147dp"
+        android:entries="@array/country"
+        android:outlineAmbientShadowColor="#FFFFFF"
+        ></Spinner>
 
 </RelativeLayout>

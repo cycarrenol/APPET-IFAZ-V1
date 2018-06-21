@@ -5,16 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#2E2E2E">
+    android:background="#2E2E2E"><![CDATA[
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Activity 2" />
 
-
+    ]]>
 
     <TextView
         android:id="@+id/textoTXT"
@@ -22,7 +17,7 @@
         android:layout_height="171dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="109dp"
+        android:layout_marginBottom="112dp"
         android:background="#2E9AFE"
         android:fontFamily="monospace"
         android:text="No hay entradas de resistividad"
@@ -41,5 +36,19 @@
         android:text="Guardar"
         android:layout_alignParentLeft="true"
         tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:id="@+id/BConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:baselineAligned="false"
+        android:text="CONFIGURACION"
+        tools:ignore="RtlCompat" />
+
+
 
 </RelativeLayout>
