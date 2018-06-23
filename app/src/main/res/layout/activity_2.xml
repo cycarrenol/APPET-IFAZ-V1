@@ -31,7 +31,7 @@
         android:layout_marginBottom="36dp"
         android:layout_marginStart="19dp"
         android:baselineAligned="false"
-        android:text="Guardar"
+        android:text="Inicio"
         tools:ignore="RtlCompat" />
 
 
