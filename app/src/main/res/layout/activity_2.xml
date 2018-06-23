@@ -5,50 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#2E2E2E"><![CDATA[
-    >
-
-
-    ]]>
+    android:background="#3f9f3f">
 
     <TextView
         android:id="@+id/textoTXT"
-        android:layout_width="343dp"
-        android:layout_height="171dp"
+        android:layout_width="199dp"
+        android:layout_height="299dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="112dp"
-        android:background="#2E9AFE"
+        android:background="@android:color/holo_orange_light"
         android:fontFamily="monospace"
         android:text="No hay entradas de resistividad"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        />
 
     <!--PARA MOSTRAR LA RUTA-->
 
     <Button
         android:id="@+id/createq"
-        android:layout_width="match_parent"
+        android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="19dp"
         android:baselineAligned="false"
         android:text="Guardar"
-        android:layout_alignParentLeft="true"
         tools:ignore="RtlCompat" />
 
 
     <Button
         android:id="@+id/BConfig"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
         android:baselineAligned="false"
-        android:text="CONFIGURACION"
+        android:text="Atrás"
         tools:ignore="RtlCompat" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/createq"
+        android:layout_marginEnd="15dp"
+        android:background="#FF0000"
+        android:text="Stop"
+        android:textColor="@android:color/background_light"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BConfig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-44dp"
+        android:text="APPET"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
